@@ -1,0 +1,22 @@
+/* Corrected CSS - bugSolution.css */
+
+/* Avoid division by zero */
+.element {
+  width: calc(100% / (1 + 0.000001)); /* Added a small number to avoid division by zero*/ 
+}
+
+/* Correct unit usage */
+.anotherElement {
+  width: calc(100% - 50px);
+  height: calc(200px + 50%);
+}
+
+/* Handle cases when a calculation might result in a negative value */
+.potentialNegative {
+  width: calc(max(0, 100% - 200px)); /* Ensures width is not negative */
+}
+
+/* Good practice: Use spaces around operators within calc() for better readability */
+.wellFormatted {
+  width: calc( 100% - 20px );
+}
