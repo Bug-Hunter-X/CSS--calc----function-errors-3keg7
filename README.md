@@ -1,0 +1,1 @@
+This repository demonstrates a common error when using the CSS `calc()` function: incorrect unit usage or division by zero.  The `bug.css` file shows the faulty code, and `bugSolution.css` provides a corrected version. The error often manifests as unexpected element sizing or rendering issues.  See the comments in the code for details.
